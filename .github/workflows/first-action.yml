@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print greeting
-        run:  echo "Hello World"|echo "This is second command run by using pipe."
+        run:  |
+            echo "First."
+            echo "Second."
       - name: Print goodbye
         run: echo "Done - bye"
